@@ -1,0 +1,11 @@
+{
+    "mainTitle":[{
+            "date": "19.10.2021",
+            "title": "Bugün ne oldu",
+            "titleInfo": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text..."
+    }],
+    "sideBarContents":[
+        "Anasayfa","Gündem","Ekonomi","Spor","Magazin","Dünya","Teknoloji","Sağlık"
+    ]
+    
+}
