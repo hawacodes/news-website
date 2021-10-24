@@ -8,12 +8,10 @@
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
-<body>
+<body onload="fillMainList()">
     <div class="row">            
-        <div class="col-9">  
-                
-            <aside class="nav-side-bar" >
-                                    
+        <div class="col-md-8 col-sm-12">                  
+            <aside class="nav-side-bar" >                                  
                 <ul>
                     <li><a href="#">Anasayfa</a></li>
                     <li><a href="#">Gündem</a></li>
@@ -26,7 +24,7 @@
                 </ul> 
                 <div class="icons"></div>
             </aside> 
-            <div class="main align-items-center d-flex justify-content-center ">  
+            <div class="main mainImage align-items-center d-flex justify-content-center ">  
                 <div class="logoContainer"> 
                     <a href="/index.html"><img class="logo" src="/assets/logos/Group 439.svg"></a> 
                 </div>                   
@@ -44,53 +42,12 @@
         </div>   
         
     </div>
-    <div class="col-3">
-        <div class="main-list">
-            <div class="main-list-item">
-              <h5 class="main-list-number">01</h5>
-              <p class="main-list-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div class="main-list-item">
-                <h5 class="main-list-number">02</h5>
-                <p class="main-list-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-              <div class="main-list-item">
-                <h5 class="main-list-number">03</h5>
-                <p class="main-list-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-              <div class="main-list-item">
-                <h5 class="main-list-number">04</h5>
-                <p class="main-list-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-              <div class="main-list-item">
-                <h5 class="main-list-number">05</h5>
-                <p class="main-list-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-              <div class="main-list-item">
-                <h5 class="main-list-number">06</h5>
-                <p class="main-list-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-              <div class="main-list-item">
-                <h5 class="main-list-number">07</h5>
-                <p class="main-list-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-              <div class="main-list-item">
-                <h5 class="main-list-number">08</h5>
-                <p class="main-list-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-              <div class="main-list-item">
-                <h5 class="main-list-number">09</h5>
-                <p class="main-list-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-              <div class="main-list-item">
-                <h5 class="main-list-number">10</h5>
-                <p class="main-list-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
+    <div class="col-md-4">
+        <div class="main-list" id="main-list-wrapper">            
         </div>         
     </div>
     </div>
-    
 </body>
-<script src="app.js"></script>
+<script src="../app.js"></script>
 <script src="../getAssets.js"></script>
 </html>

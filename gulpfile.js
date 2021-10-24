@@ -17,7 +17,7 @@ const bundleSass = () => {
 };
 
 const devWatch = () => {
-  watch("assets/sass/**/*.scss", bundleSass);
+  watch("assets/sass/*.scss", bundleSass);
 };
 
 exports.bundleSass = bundleSass;
