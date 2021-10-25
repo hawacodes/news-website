@@ -1,31 +1,25 @@
 //fetch api for render data
 async function fillCards() {
-  //   const asset = fetch("/assets/json/assets.json").then((response) =>
-  //     response.json()
-  //   );
-
   const response = await fetch("/assets/json/assets.json");
   const asset = await response.json();
 
-  const { news } = asset;
+  const { newsWithAd } = asset;
 
   const cardItem = document.getElementById("card-item-list");
 
   //
   //  //map array
-  news.forEach((element) => {
+  newsWithAd.forEach((element) => {
     const wrapper = document.createElement("div");
     wrapper.classList.add("col");
-    wrapper.classList.add("mb-2");
     wrapper.classList.add("card-wrapper");
     cardItem.appendChild(wrapper);
     const cardInfo = document.createElement("div");
-    cardInfo.classList.add("card");
-    cardInfo.classList.add("card-info");
+    cardInfo.classList.add("card", "card-info");
     wrapper.appendChild(cardInfo);
     const cardNumber = document.createElement("div");
     cardNumber.classList.add("card-number");
-    cardNumber.textContent = element.id;
+    cardNumber.textContent = `${element.id}`.padStart(2, "0");
     cardInfo.appendChild(cardNumber);
     const cardContent = document.createElement("div");
     cardContent.classList.add("card-content");
@@ -47,25 +41,18 @@ async function fillCards() {
     cardImage.alt = "Card Image";
     cardBody.appendChild(cardImage);
     const cardText = document.createElement("p");
-    cardText.classList.add("card-text");
-    cardText.classList.add("listinfo");
+    cardText.classList.add("card-text", "listinfo");
     cardText.textContent = element.content;
     cardBody.appendChild(cardText);
     const cardButton = document.createElement("a");
-    cardButton.classList.add("btn");
-    cardButton.classList.add("btn-light");
+    cardButton.classList.add("btn", "btn-light");
+    cardButton.setAttribute("href", "/pages/newsListInfo.html");
     cardButton.textContent = "DETAY";
     cardBody.appendChild(cardButton);
-
-    console.log(cardItem);
   });
 }
 
 async function fillMainList() {
-  //   const asset = fetch("/assets/json/assets.json").then((response) =>
-  //     response.json()
-  //   );
-
   const response = await fetch("/assets/json/assets.json");
   const asset = await response.json();
 
@@ -73,15 +60,6 @@ async function fillMainList() {
 
   const mainList = document.getElementById("main-list-wrapper");
 
-  //
-  //  //map array
-
-  // <div class="main-list-item">
-  //   <h5 class="main-list-number">01</h5>
-  //   <p class="main-list-text">
-  //     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-  //   </p>
-  // </div>;
   news.forEach((element) => {
     const listItem = document.createElement("div");
     listItem.classList.add("main-list-item");
@@ -89,7 +67,7 @@ async function fillMainList() {
     mainList.appendChild(listItem);
     const listNumber = document.createElement("h5");
     listNumber.classList.add("main-list-number");
-    listNumber.textContent = element.id;
+    listNumber.textContent = `${element.id}`.padStart(2, "0");
     listItem.appendChild(listNumber);
     const listContent = document.createElement("p");
     listContent.classList.add("main-list-text");
@@ -98,10 +76,6 @@ async function fillMainList() {
   });
 }
 async function fillverticalList() {
-  //   const asset = fetch("/assets/json/assets.json").then((response) =>
-  //     response.json()
-  //   );
-
   const response = await fetch("/assets/json/assets.json");
   const asset = await response.json();
 
@@ -109,49 +83,34 @@ async function fillverticalList() {
 
   const mainList = document.getElementById("vcard-list");
 
-  {
-    /* <div class="card card-con">
-                <div class="row g-0">
-                    <div class="card-number">08</div>
-                
-                  <div class="col-md-4">
-                    <img src="/assets/images/18.png" class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                  </div>
-               
-                </div>
-              </div> */
-  }
   news.forEach((element) => {
     const listItem = document.createElement("div");
-    listItem.classList.add("card");
-    listItem.classList.add("card-con");
+    listItem.classList.add("card", "card-con");
     mainList.appendChild(listItem);
+    const numberRow = document.createElement("div");
+    numberRow.classList.add("row", "mx-0");
+    listItem.appendChild(numberRow);
+    const numberCol = document.createElement("div");
+    numberCol.classList.add("col-12", "card-number");
+    numberCol.textContent = `${element.id}`.padStart(2, "0");
+    numberRow.appendChild(numberCol);
     const listItemRow = document.createElement("div");
-    listItemRow.classList.add("row");
-    listItemRow.classList.add("g-0");
+    listItemRow.classList.add("row", "mx-0");
     listItem.appendChild(listItemRow);
-    const listCardNumber = document.createElement("div");
-    listCardNumber.classList.add("card-number");
-    listCardNumber.textContent = element.id;
-    listItemRow.appendChild(listCardNumber);
     const cardWrapper = document.createElement("div");
-    cardWrapper.classList.add("col-md-4");
+    cardWrapper.classList.add("col-md-5");
     listItemRow.appendChild(cardWrapper);
     const cardImage = document.createElement("img");
-    cardImage.classList.add("img-fluid");
-    cardImage.classList.add("rounded-start");
+    cardImage.classList.add("img-fluid", "rounded-start");
     cardImage.src = element.image;
     cardImage.alt = "Card Image";
     cardWrapper.appendChild(cardImage);
+    const textWrapper = document.createElement("div");
+    textWrapper.classList.add("col-md-7");
+    listItemRow.appendChild(textWrapper);
     const cardBody = document.createElement("div");
-    cardBody.classList.add("card-body");
-    cardWrapper.appendChild(cardBody);
+    cardBody.classList.add("card-body", "py-0");
+    textWrapper.appendChild(cardBody);
     const cardTitle = document.createElement("h5");
     cardTitle.classList.add("card-title");
     cardTitle.textContent = element.title;

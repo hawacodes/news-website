@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>News Website</title>
-    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="stylesheet" href="/assets/css/newsList.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -13,35 +13,37 @@
       crossorigin="anonymous"
     />
   </head>
-  <body onload="fillCards()">
-    <div class="row">
-      <div class="logoContainerMini">
-        <a href="/pages/index.html">
-          <img class="logoMini" src="/assets/logos/Group 439.svg"
-        /></a>
-      </div>
-      <aside class="nav-side-bar border">
-        <div class="navbar-btn" onclick="myFunction(this)">
-          <div class="buttonContainer">
-            <div class="bar1"></div>
-            <div class="invis"></div>
-            <div class="bar3"></div>
-          </div>
-        </div>
-        <ul id="side-bar-ul">
-          <li><a href="#">Anasayfa</a></li>
-          <li><a href="#">Gündem</a></li>
-          <li><a href="#">Ekonomi</a></li>
-          <li><a href="#">Spor</a></li>
-          <li><a href="#">Magazin</a></li>
-          <li><a href="#">Dünya</a></li>
-          <li><a href="#">Teknoloji</a></li>
-          <li><a href="#">Sağlık</a></li>
-        </ul>
-        <div class="icons"></div>
-      </aside>
 
-      <div class="col-4 p-0 m-0">
+  <body onload="fillCards()">
+    <div class="row fit-screen mx-0">
+      <div class="side-bar-wrapper">
+        <div class="logoContainerMini">
+          <a href="/pages/index.html">
+            <img class="logoMini" src="/assets/logos/Group 439.svg"
+          /></a>
+        </div>
+        <aside class="nav-side-bar border">
+          <div class="navbar-btn" onclick="myFunction(this)">
+            <div class="buttonContainer">
+              <div class="bar1"></div>
+              <div class="invis"></div>
+              <div class="bar3"></div>
+            </div>
+          </div>
+          <ul id="side-bar-ul">
+            <li><a href="#">Anasayfa</a></li>
+            <li><a href="#">Gündem</a></li>
+            <li><a href="#">Ekonomi</a></li>
+            <li><a href="#">Spor</a></li>
+            <li><a href="#">Magazin</a></li>
+            <li><a href="#">Dünya</a></li>
+            <li><a href="#">Teknoloji</a></li>
+            <li><a href="#">Sağlık</a></li>
+          </ul>
+          <div class="icons"></div>
+        </aside>
+      </div>
+      <div class="col-4 m-0 pr-0 pb-0 pt-0 pl-54px">
         <div class="card cardMain">
           <div class="card-body listbodymain">
             <div class="card-content">
@@ -57,8 +59,8 @@
           </div>
         </div>
       </div>
-      <div class="col-7 nopadding">
-        <div class="card-list" id="card-item-list"></div>
+      <div class="col-8 m-0 p-0">
+        <div class="card-list w-100 h-100" id="card-item-list"></div>
       </div>
     </div>
 

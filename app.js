@@ -22,7 +22,7 @@ function myFunction(x) {
     }
     toggleNavStatus = true;
   } else {
-    getSidebar.style.width = "68px";
+    getSidebar.style.width = "54px";
     let arrayLength = getSidebarLinks.length;
     for (let i = 0; i < arrayLength; i++) {
       getSidebarLinks[i].style.opacity = "0";

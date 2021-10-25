@@ -12,11 +12,11 @@ const bundleSass = () => {
     .pipe(compileSass().on("error", compileSass.logError))
     .pipe(minifyCSS())
     .pipe(sourceMaps.write())
-    .pipe(concat("bundle.css"))
     .pipe(dest("assets/css"));
 };
 
 const devWatch = () => {
+  bundleSass();
   watch("assets/sass/*.scss", bundleSass);
 };
 

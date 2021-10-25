@@ -1,4 +1,102 @@
 {
+  "newsWithAd": [
+    {
+      "id": "1",
+      "title": "Lorem ipsum dolor sit amet",
+      "date": "3 saat önce",
+      "content": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC...",
+      "image": "/assets/images/11.png",
+      "subtitle": "3 saat önce"
+    },
+    {
+      "id": "2",
+      "title": "Consectetur adipiscing elit",
+      "date": "3 saat önce",
+      "content": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC...",
+      "image": "/assets/images/12.png",
+      "subtitle": "3 saat önce"
+    },
+    {
+      "id": "REKLAM",
+      "title": "",
+      "date": "",
+      "content": "",
+      "image": "/assets/images/AD.png",
+      "subtitle": ""
+    },
+    {
+      "id": "4",
+      "title": "Incididunt ut labore",
+      "date": "3 saat önce",
+      "content": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC...",
+      "image": "/assets/images/14-1.png",
+      "subtitle": "3 saat önce"
+    },
+    {
+      "id": "5",
+      "title": "Et dolore magna aliqua",
+      "date": "3 saat önce",
+      "content": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC...",
+      "image": "/assets/images/15.png",
+      "subtitle": "3 saat önce"
+    },
+    {
+      "id": "6",
+      "title": "Ut enim ad minim veniam",
+      "date": "3 saat önce",
+      "content": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC...",
+      "image": "/assets/images/16.png",
+      "subtitle": "3 saat önce"
+    },
+    {
+      "id": "REKLAM",
+      "title": "",
+      "date": "",
+      "content": "",
+      "image": "/assets/images/AD.png",
+      "subtitle": ""
+    },
+    {
+      "id": "7",
+      "title": "Quis nostrud exercitation",
+      "date": "3 saat önce",
+      "content": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC...",
+      "image": "/assets/images/17.png",
+      "subtitle": "3 saat önce"
+    },
+    {
+      "id": "8",
+      "title": "Ullamco laboris nisi ut aliquip",
+      "date": "3 saat önce",
+      "content": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC...",
+      "image": "/assets/images/18.png",
+      "subtitle": "3 saat önce"
+    },
+    {
+      "id": "REKLAM",
+      "title": "",
+      "date": "",
+      "content": "",
+      "image": "/assets/images/AD.png",
+      "subtitle": ""
+    },
+    {
+      "id": "9",
+      "title": "Ex ea commodo consequat",
+      "date": "3 saat önce",
+      "content": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC...",
+      "image": "/assets/images/19.png",
+      "subtitle": "3 saat önce"
+    },
+    {
+      "id": "10",
+      "title": "Duis aute irure dolor in",
+      "date": "3 saat önce",
+      "content": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC...",
+      "image": "/assets/images/20.png",
+      "subtitle": "3 saat önce"
+    }
+  ],
   "news": [
     {
       "id": "1",
