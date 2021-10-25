@@ -7,8 +7,6 @@ async function fillCards() {
 
   const cardItem = document.getElementById("card-item-list");
 
-  //
-  //  //map array
   newsWithAd.forEach((element) => {
     const wrapper = document.createElement("div");
     wrapper.classList.add("col");
